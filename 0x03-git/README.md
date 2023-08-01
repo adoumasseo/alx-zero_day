@@ -1,1 +1,1 @@
-it's about my git repository readme
+it's about my git repository readme.
