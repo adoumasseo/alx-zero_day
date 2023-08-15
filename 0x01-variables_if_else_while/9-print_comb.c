@@ -19,7 +19,7 @@ int main(void)
 			putchar(' ');
 		}
 		if (i == 57)
-			putchar('$');
+			putchar(' ');
 	}
 	return (0);
 }
