@@ -3,7 +3,7 @@
 /**
  * main - entry point
  * Description: it's about print alphabet in lowercase without e & q
- * return: As succes main return 0
+ * Return: As succes main return 0
  */
 
 int main(void)
@@ -12,7 +12,7 @@ int main(void)
 
 	while (c <= 122)
 	{
-		if (c != 101 && c != 112)
+		if (c != 101 || c != 112)
 			putchar(c);
 		c++;
 	}
