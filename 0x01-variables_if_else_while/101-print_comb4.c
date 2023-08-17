@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point 
+ * main - entry point
  * Description: it's about printing all combinaison of three digits
  * Return: 0 as success
  */
@@ -9,7 +9,7 @@
 int main(void)
 {
 	int a, b, c;
-	
+
 	for (a = 48; a <= 55; a++)
 	{
 		for (b = 48; b <= 56; b++)
@@ -27,7 +27,6 @@ int main(void)
 						putchar(32);
 					}
 				}
-				
 			}
 			c = 48;
 		}

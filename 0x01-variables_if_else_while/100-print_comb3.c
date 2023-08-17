@@ -27,7 +27,6 @@ int main(void)
 			}
 		}
 		b = 49;
-		
 	}
 	putchar(10);
 	return (0);
