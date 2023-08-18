@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-	int r = 48;
+	char r = 98;
 
 	putchar(r +'0');
 	return (0);
