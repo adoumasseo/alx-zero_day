@@ -11,6 +11,6 @@ void print_alphabet(void)
 	int i = 97;
 
 	for (; i <= 122; i++)
-		putchar(i);
-	putchar(10);
+		_putchar(i);
+	_putchar(10);
 }

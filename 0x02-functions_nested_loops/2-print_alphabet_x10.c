@@ -5,6 +5,11 @@
  * Description: a function that prints the alphabet, in lowercase.
  * Return: it's void , so don't return anything
  */
+int main(void)
+{
+	print_alphabet_x10();
+	return (0);
+}
 
 void print_alphabet_x10(void)
 {
@@ -12,10 +17,12 @@ void print_alphabet_x10(void)
 
 	for (j = 0; j < 10; j++)
 	{
-		int i = 97;
+		int i;
 
-		for (; i <= 122; i++)
-			putchar(i);
-		putchar(10);
+		for (i = 97; i <= 122; i++)
+		{	
+			_putchar(i);
+		}
+		_putchar(10);
 	}
 }
