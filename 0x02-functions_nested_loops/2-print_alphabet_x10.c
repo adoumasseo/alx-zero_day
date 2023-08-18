@@ -5,11 +5,6 @@
  * Description: a function that prints the alphabet, in lowercase.
  * Return: it's void , so don't return anything
  */
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
 
 void print_alphabet_x10(void)
 {
