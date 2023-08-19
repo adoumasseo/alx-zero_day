@@ -4,7 +4,7 @@ int main(void)
 {
 	int n;
 
-	n = print_last_digit(-1024);
+	n = print_last_digit(1);
 	printf("%d", n);
 	return (0);
 }
