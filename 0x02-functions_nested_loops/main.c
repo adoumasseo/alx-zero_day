@@ -4,7 +4,7 @@ int main(void)
 {
 	int n;
 	
-	n = _abs(-50);
+	n = print_last_digit(565);
 	printf("%d", n);
 	return (0);
 }
