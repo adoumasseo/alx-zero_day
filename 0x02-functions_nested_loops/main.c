@@ -2,9 +2,6 @@
 
 int main(void)
 {
-	int n;
-
-	n = print_last_digit(1);
-	printf("%d", n);
+	jack_bauer();
 	return (0);
 }
