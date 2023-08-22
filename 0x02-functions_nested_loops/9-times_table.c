@@ -8,43 +8,31 @@
 
 void times_table(void)
 {
-	int i, j;
+	int i, j, scale;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (j == 9)
-				printn(i * j);
-			else
+			scale = i * j;
+			if (j != 0)
 			{
-				printn(i * j);
 				_putchar(',');
 				_putchar(' ');
 			}
+			else
+				_putchar(scale + '0');
+			if (scale < 10 && j != 0)
+			{
+				_putchar(' ');
+				_putchar(scale + '0');
+			}
+			else if (scale >= 10)
+			{
+				_putchar('0' + scale / 10);
+				_putchar('0' + scale % 10);
+			}
 		}
 		_putchar(10);
-	}
-}
-
-/**
- * printn - Print two digit number using _putchar
- * @n: this is two digit number to print and it's int type
- *
- * Description: printn print two digits number using _putchar function
- * Return: it's void type
- */
-
-void printn(int n)
-{
-	if (n <= 9)
-	{
-		_putchar(' ');
-		_putchar('0' + n);
-	}
-	else
-	{
-		_putchar('0' + (n - (n % 10)) / 10);
-		_putchar('0' + (n % 10));
 	}
 }
