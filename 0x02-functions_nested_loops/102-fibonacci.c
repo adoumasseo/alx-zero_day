@@ -15,10 +15,10 @@ int main(void)
 	f2 = 1;
 	i = 0;
 	printf("%lu, %lu", f1, f2);
-	for (; i <= 50; i++)
+	for (; i < 49; i++)
 	{
 		nf = f1 + f2;
-		if (i < 50)
+		if (i < 49)
 			printf(", ");
 		printf("%lu", nf);
 		f1 = f2;
