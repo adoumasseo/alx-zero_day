@@ -14,7 +14,7 @@ int main(void)
 	f1 = 1;
 	f2 = 1;
 	i = 0;
-	printf("%lu, %lu", f1, f2);
+	printf("%lu", f2);
 	for (; i < 49; i++)
 	{
 		nf = f1 + f2;
