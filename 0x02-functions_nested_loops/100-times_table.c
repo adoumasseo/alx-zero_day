@@ -22,7 +22,7 @@ void print_times_table(int n)
 			{
 				scale = i * j;
 				if (j != 0)
-				{	
+				{
 					_putchar(',');
 					_putchar(' ');
 				}
@@ -43,11 +43,10 @@ void print_times_table(int n)
 				else if (scale >= 100)
 				{
 					_putchar('0' + scale / 100);
-					_putchar('0' + ((scale -( scale % 10)) / 10) % 10);
+					_putchar('0' + ((scale - (scale % 10)) / 10) % 10);
 					_putchar('0' + scale % 10);
 				}
 			}
-			_putchar(10);
 		}
 	}
 }
