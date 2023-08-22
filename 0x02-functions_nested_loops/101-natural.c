@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * sum_multiples - print the sum of all multiples of 3 or 5 below 1024
+ * main - print the sum of all multiples of 3 or 5 below 1024
  * Description: print the sum of all multiples of 3 or 5 below 1024
- * Return: the sum
+ * Return: 0 as succes
  */
 
-int sum_multiples(void)
+int main(void)
 {
 	int sum, i;
 
@@ -18,5 +18,6 @@ int sum_multiples(void)
 			sum += i;
 		i++;
 	}
-	return (sum);
+	printf("%d\n", sum);
+	return (0);
 }
