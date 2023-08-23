@@ -19,11 +19,9 @@ void print_square(int size)
 		i = 0;
 		for (; i < size; i++)
 		{
-			for (; j < size; j++)
+			for (j = 0; j < size; j++)
 				_putchar(35);
 			_putchar(10);
-			j = 0;
 		}
-		_putchar(10);
 	}
 }
