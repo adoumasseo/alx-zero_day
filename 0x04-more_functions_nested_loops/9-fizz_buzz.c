@@ -1,31 +1,35 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * main - fizz-buzz
- * Description: print fizz for multiple of 3 and buzz for 5
- * Return: 0 for success
+ * main - entry point
+ * Description: it's gonna test if fizzbuzz work
+ * Return: 0 as succes
  */
 int main(void)
 {
-	int n;
-
-	for (n = 1; n <= 100; n++)
-	{
-		if (n % 3 == 0 && n % 5 == 0)
-			printf("FizzBuzz ");
-		else if (n % 3 == 0 && !(n % 5 == 0))
-		{
-			printf("Fizz ");
-		}
-		else if (n % 5 == 0 && !(n % 3 == 0))
-		{
-			printf("Buzz ");
-		}
-		else
-		{
-			printf("%d ", n);
-		}
-	}
-	printf("\n");
+	fizzbuzz();
 	return (0);
+}
+
+/**
+ * fizzbuzz - print fizz or buzz
+ * Description: print 1 to 100
+ * Return: nothing it's void type function
+ */
+
+void fizzbuzz(void)
+{
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz ");
+		else if (i % 5 == 0 && !(i % 3 == 0))
+			printf("Buzz ");
+		else if (i % 3 == 0 && !(i % 5 == 0))
+			printf("Fizz ");
+		else
+			printf("%d ", i);
+	}
 }
