@@ -43,7 +43,7 @@ int is_prime(unsigned long int n)
 void largest_prime_factor(void)
 {
 	unsigned long int i, max;
-	
+
 	max = 0;
 	for (i = 1; i * i <= 612852475143; i++)
 	{
