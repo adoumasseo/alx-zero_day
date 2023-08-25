@@ -16,5 +16,6 @@ void fizzbuzz(void);
 void print_triangle(int size);
 void largest_prime_factor(void);
 int is_prime(unsigned long int);
+void print_number(int n);
 
 #endif
