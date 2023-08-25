@@ -22,13 +22,13 @@ int main(void)
 
 int is_prime(unsigned long int n)
 {
-	unsigned int i;
+	unsigned long int i;
 
 	if (n <= 1)
 		return (0);
 	for (i = 2; i * i <= n; i++)
 	{
-		if (n % i)
+		if (n % i == 0)
 			return (0);
 	}
 	return (1);
@@ -45,10 +45,12 @@ void largest_prime_factor(void)
 	unsigned long int i, max;
 
 	max = 0;
-	for (i = 1; i * i <= 612852475143; i++)
+	for (i = 1; i * 8038 <= 612852475143; i++)
 	{
 		if (612852475143 % i == 0 && is_prime(i))
+		{
 			max = i;
+		}
 	}
 	if (max != 0)
 		printf("%lu\n", max);
