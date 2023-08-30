@@ -7,4 +7,4 @@ read -p "Entrez le message de commit : " commit_message
 # Exécute les commandes git en utilisant les variables d'environnement
 git add .
 git commit -m "$commit_message"
-git push
+git push https://$GITHUB_TOKEN@github.com/adoumasseo/alx-zero_day.git
